@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>google.com</title>
+    <!-- add favicon or tab logo of page -->
     <link rel="icon" href="Multimedia/download.png" sizes="40x40">
     <!-- internal css -->
     <style>
@@ -25,7 +26,7 @@
             margin: 0;
         }
 
-        /* centering content */
+        /* Main section of page */
         .main-box {
             height: 80vh;
             display: flex;
@@ -40,11 +41,7 @@
 
         .search-component {
             padding: 1rem 0;
-
-
         }
-
-     
 
         .logo img {
             display: block;
@@ -52,8 +49,6 @@
             max-width: 100%;
             height: auto;
         }
-
-        
 
         .search-bar .search-input {
             width: 80%;
@@ -76,7 +71,7 @@
         input[type="search"]:focus-visible,
         input[type="search"]:hover {
             outline: none;
-            border: 1px solid black;
+            border: 1px solid rgba(236, 234, 234, 0.568);
             box-shadow: 8px -2px 12px 1px #aaaaaaa1;
         }
 
@@ -115,18 +110,20 @@
         section > div{
             margin:.4rem 0;
         }
-        /* header of page  */
+
+        /* styles -  Header of page  */
+
         .gl-header{
             display: flex;
             justify-content: flex-end;
         }
-        .gl-nav{
-            
-            padding:1rem .8rem;
-            width:20%;
+
+        .gl-nav{ 
             display: flex;
             justify-content: space-around;
             align-content: center;
+            padding:1rem .8rem;
+            width:20%;
         }
         .gl-nav a{
             color:black;
@@ -137,16 +134,21 @@
         }
 
         /* footer styles */
+
         .gl-footer{
+            
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
             /* css trick to make footer stick to bottom of page */
             position: absolute;
             bottom: 0;
             left:0;
+
             width:100%;
             padding:.8rem 0.4rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             background-color: #f2f2f2;
 
 
@@ -175,7 +177,7 @@
 </head>
 
 <body>
-    <!-- adding nav bar -->
+    <!-- Navigation Bar / Header of page -->
     <header class="gl-header">
             <div class="gl-nav">
                 <a href="">Gmail</a>
@@ -188,6 +190,8 @@
                 </div>
             </div>
     </header>
+
+    <!-- Main section of page -->
     <main class="main-box">
         <section class="search-box">
             
@@ -216,7 +220,8 @@
             </div>
         </section>
     </main>
-    <!--  footer of page -->
+
+    <!--  Footer of page -->
     <footer class="gl-footer">
         <div class="left">
         <a href="">Advertising</a>
