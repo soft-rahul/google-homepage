@@ -27,7 +27,7 @@
 
         /* centering content */
         .main-box {
-            height: 100vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -115,12 +115,46 @@
         section > div{
             margin:.4rem 0;
         }
+        /* header of page  */
+        .gl-header{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .gl-nav{
+            
+            padding:1rem .8rem;
+            width:20%;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+        }
+        .gl-nav a{
+            color:black;
+            text-decoration: none;
+        }
+        .gl-nav a:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
+    <!-- adding nav bar -->
+    <header class="gl-header">
+            <div class="gl-nav">
+                <a href="">Gmail</a>
+                <a href=""> Images</a>
+                <div>
+                    <img src="Multimedia/apps_black_24dp.svg" alt="">
+                </div>
+                <div>
+                    <img src="Multimedia/account_circle_black_24dp.svg" alt="">
+                </div>
+            </div>
+    </header>
     <main class="main-box">
         <section class="search-box">
+            
             <div class="search-component logo">
                 <img src="Multimedia/googlelogo_color_272x92dp.png" alt="google-logo">
             </div>
@@ -146,6 +180,7 @@
             </div>
         </section>
     </main>
+    <!--  -->
 </body>
 
 </html>
