@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google.com</title>
+    <link rel="icon" href="Multimedia/download.png" sizes="40x40">
+    <!-- internal css -->
+    <style>
+        /* css reset */
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        html,
+        body {
+            margin: 0;
+        }
+
+        /* centering content */
+        .main-box {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-box {
+            width: 60%;
+
+        }
+
+        .search-component {
+            padding: 1rem 0;
+
+
+        }
+
+        .logo {}
+
+        .logo img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .search-bar {}
+
+        .search-bar .search-input {
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+        .search-input input[type="search"] {
+
+            display: block;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: .7rem .4rem;
+            text-indent: 30px;
+            font-size: 1.2rem;
+        }
+
+        input[type="search"]:focus,
+        input[type="search"]:focus-visible,
+        input[type="search"]:hover {
+            outline: none;
+            border: 1px solid black;
+            box-shadow: 8px -2px 12px 1px #aaaaaaa1;
+        }
+
+        .icons {
+            position: absolute;
+            top: 12px;
+        }
+
+        .search {
+
+            left: 10px;
+        }
+
+        .mic {
+
+            right: 10px;
+        }
+
+        .search-btn {
+            display: flex;
+            justify-content: center;
+            padding: 2rem .4rem;
+        }
+
+        .search-btn-group {
+            display: inline-block;
+            border: none;
+            padding: .4rem .6rem;
+            text-transform: capitalize;
+            margin:0 20px;
+        }
+        .search-btn-group:hover,
+        .search-btn-group:active{
+            outline:1px solid black;
+        }
+        section > div{
+            margin:.4rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-box">
+        <section class="search-box">
+            <div class="search-component logo">
+                <img src="Multimedia/googlelogo_color_272x92dp.png" alt="google-logo">
+            </div>
+            <div class="search-component search-bar">
+                <form action="" class="form">
+                    <div class="search-input">
+
+                        <input type="search" name="" id="search-area" class="search">
+                        <img src="Multimedia/search_black_24dp.svg" alt="serach-logo" class="icons search">
+                        <img src="Multimedia/mic_black_24dp.svg" alt="mic-logo" class="icons mic">
+                    </div>
+                    <div class="search-btn">
+                        <button class="search-btn-group">
+                            Google Search
+                        </button>
+                        <button class="search-btn-group">
+                            I'm feeling Lucky
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
